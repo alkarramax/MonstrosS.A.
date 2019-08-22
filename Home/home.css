@@ -4,23 +4,26 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    -webkit-box-sizing: border-box;  /* Interpretação de navegadores*/
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.site-headers{
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Worksans, Arial, Helvetica, sans-serif;
+}
+.header{
     width: 100%;
-    height: 100vh;
-    background-image: url("Design\ sem\ nome\ \(1\).png");
-    background-size: cover;
+    height: 130vh;
+    background-image: url("Design\ sem\ nome\ \(13\).png");
     background-repeat: no-repeat;
-    font-family: Worksans;
-
+    background-size: cover;
 }
 
 nav{
-    width: 205vh;
+    width: 100%;
     height: 100px;
     display: flex;
     color: #fff;
@@ -55,31 +58,110 @@ nav{
     width: 100%;
     height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 .menu ul li{
     list-style: none;
-    font-size: 14px;
 }
 
-section{
-    display: flex;
+ .menu ul li a{
+    font-size: 1rem; 
+    color: white;
+    text-decoration: none;
 }
-
 .leftside {
-    height: 100%;
     padding: 9vh;
   }
   
-  h1 {
-    font-size: 3.2rem;
+  .leftside h1 {
+    font-size: 3rem;
   }  
+
   .txt-type > .txt {
     border-right: 0.2rem solid;
     color: #0dae7a;
   }
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.card-wrapper{
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card{
+    width: 21rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+
+.card .card-img{
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.card .profile-img{
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -5rem;
+    z-index: 999;
+    border: 1rem solid #ebeeeb;
+}
+
+.card h1{
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.card .about{
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333;
+}
+
+.card .btn-doar{
+    padding: 1rem 1.5rem;
+    background-color: #0dae7a;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color:#eee;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem;
+    }
+}
   
   
