@@ -39,11 +39,19 @@ class TypeWriter {
     }
 }
   
-  document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', init);
   
-  function init() {
+function init() {
     const txtElement = document.querySelector('.txt-type');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
     new TypeWriter(txtElement, words, wait);
-  }
+}
+
+document.getElementById("button").addEventListener("click", function() {
+    document.querySelector(".popup").style.display = "flex";
+})
+
+document.querySelector(".close").addEventListener("click", function() {
+    document.querySelector(".popup").style.display = "none";
+})
