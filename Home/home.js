@@ -48,20 +48,27 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
-document.getElementById("button").addEventListener("click", function() {
-    document.querySelector(".popup").style.display = "flex";
-})
+var popUpAparece = document.getElementById("popUpAparecer");
+var modalBg = document.querySelector(".popup");
+var modalClose = document.querySelector(".close");
+var modalClose2 = document.querySelector(".close2");
 
-document.querySelector(".close").addEventListener("click", function() {
-    document.querySelector(".popup").style.display = "none";
-})
+popUpAparece.addEventListener("click", function() {
+    modalBg.classList.add("popup-active");
+});
 
+modalClose.addEventListener("click", function() {
+    modalBg.classList.remove("popup-active");
+});
 
+modalClose2.addEventListener("click", function() {
+    modalBg.classList.remove("popup-active");
+});
 
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('signIn');
-    const container = document.getElementById('container');
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-    signUpButton.addEventListener("click", () => container.classList.add('right-panel-active'));
-    signInButton.addEventListener("click", () => container.classList.remove('right-panel-active'));
+signUpButton.addEventListener("click", () => container.classList.add('right-panel-active'));
+signInButton.addEventListener("click", () => container.classList.remove('right-panel-active'));
 

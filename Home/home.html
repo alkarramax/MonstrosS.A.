@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="home.css">
+   
+
 </head>
 <body>
     <header class="header">
@@ -18,7 +20,7 @@
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>
-                    <li><a href="#" id="button">Login</a></li>
+                    <li><a class="nav-link" href="#" id="popUpAparecer">Login</a></li>
                     <li><a href="">Contato</a></li>
                 </ul>
             </div>
@@ -62,52 +64,52 @@
                         <a href="#" class="btn-doar">Contribua agora</a>
                 </div>
             </div>
-
-            <div class="popup">
-                <div class="popup-content">
-                    <div class="container" id="container">
-                        <div class="form-container sign-up-container">
+        </div>
+    </section>
+    
+    <div class="popup">
+        <div class="popup-content">
+            <div class="container" id="container">
+                <div class="form-container sign-up-container">
+                    <img src="./baseline_clear_black_18dp.png" alt="Close" class="close2">
+                    <form action="#">
+                        <h1>Crie Sua Conta</h1>
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Sobrenome">
+                        <input type="password" placeholder="Senha">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Cargo">
+                        <input type="text" placeholder="Unidade">
+                        <button>Cadastrar</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Entrar</h1>
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Senha">
+                        <a href="#">Esqueceu sua senha?</a>
+                        <button>Entrar</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Entrar</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
                             <img src="./baseline_clear_black_18dp.png" alt="Close" class="close">
-                            <form action="#">
-                                <h1>Crie Sua Conta</h1>
-                                <input type="text" placeholder="Nome">
-                                <input type="text" placeholder="Sobrenome">
-                                <input type="password" placeholder="Senha">
-                                <input type="email" placeholder="Email">
-                                <input type="text" placeholder="Cargo">
-                                <input type="text" placeholder="Unidade">
-                                <button>Cadastrar</button>
-                            </form>
-                        </div>
-                        <div class="form-container sign-in-container">
-                            <form action="#">
-                                <h1>Entrar</h1>
-                                <input type="email" placeholder="Email">
-                                <input type="password" placeholder="Senha">
-                                <a href="#">Esqueceu sua senha?</a>
-                                <button>Entrar</button>
-                            </form>
-                        </div>
-                        <div class="overlay-container">
-                            <div class="overlay">
-                                <div class="overlay-panel overlay-left">
-                                    <h1>Welcome Back!</h1>
-                                    <p>To keep connected with us please login with your personal info</p>
-                                    <button class="ghost" id="signIn">Entrar</button>
-                                </div>
-                                <div class="overlay-panel overlay-right">
-                                    <img src="./baseline_clear_black_18dp.png" alt="Close" class="close">
-                                    <h1>Olá, Softplayer!</h1>
-                                    <p>Ainda não tem cadastro? Cadastre-se para se tornar um Solidarity Player</p>
-                                    <button class="ghost" id="signUp">Cadastrar</button>
-                                </div>
-                            </div>
+                            <h1>Olá, Softplayer!</h1>
+                            <p>Ainda não tem cadastro? Cadastre-se para se tornar um Solidarity Player</p>
+                            <button class="ghost" id="signUp">Cadastrar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <script src="home.js"></script>
 </body>
