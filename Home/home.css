@@ -1,10 +1,10 @@
 @font-face{
     font-family: WorkSans;
-    src: url('WorkSans-Regular.ttf');
+    src: url('fontes/WorkSans-Regular.ttf');
 }
 @font-face{
     font-family: WorkSansLight;
-    src: url('WorkSans-ExtraLight.ttf');
+    src: url('fontes/WorkSans-ExtraLight.ttf');
 }
 
 *{
@@ -21,12 +21,12 @@ body{
 .header{
     width: 100%;
     height: 130vh;
-    background-image: url("Design\ sem\ nome\ \(13\).png");
+    background-image: url("imagens/Design\ sem\ nome\ \(13\).png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-nav{
+.navbar-one{
     width: 100%;
     height: 100px;
     color: #fff;
@@ -55,6 +55,12 @@ nav.navFixed .logo h1 {
     padding-top: 20px;
 }
 
+nav.navFixed .logo img{
+    width: 75px;
+    height: 85px;
+    padding-top: 18px;
+}
+
 .logo{
     width: 50%;
     display: flex;
@@ -62,9 +68,9 @@ nav.navFixed .logo h1 {
 }
 
 .logo img{
-    width: 70px;
-    height: 80px;
-    padding-top: 15px;
+    width: 75px;
+    height: 95px;
+    padding-top: 25px;
 }
 
 .logo h1{
@@ -109,10 +115,20 @@ nav.navFixed .logo h1 {
     box-shadow: 0 1px 7px rgba(0,0,0,0.6);
 }
 
-.responsive-bar h1{
+.responsive-bar .responsive-logo{
+    display: flex;
+}
+
+.responsive-bar .responsive-logo h1{
     font-size: 1.5rem;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0 15px;
     color: #000;
+}
+
+.responsive-bar .responsive-logo img{
+    width: 75px;
+    height: 85px;
+    padding-top: 18px;
 }
 
 .responsive-bar #bar{
@@ -165,7 +181,7 @@ nav.navFixed .logo h1 {
         font-size: 1.5rem;
     }
     .header{
-        background-image: url("Design\ sem\ nome\ \(13\).png");
+        background-image: url("imagens/Design\ sem\ nome\ \(13\).png");
         background-size: 500px 300px;
         background-position: right 100px;
     }
