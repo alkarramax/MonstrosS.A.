@@ -71,11 +71,12 @@ nav {
 }
 
 #menu li:hover {
-    background-color: #151515;
+    background-color: #444444;
    
 }
 
 #menu li>a:hover {
+    box-sizing: border-box;
     color: #1E90FF;
     border-left: 3px solid #1E90FF;
 }
@@ -94,7 +95,7 @@ header {
 
 header #links {
     float: right;
-    height: 100px;
+    height: 48px;
     display: block;
     color: #f7f7f7;
     font-size: 1em;
@@ -111,4 +112,45 @@ header #links {
 
 #links:hover {
     background-color: #1E90FF
+}
+
+.minimize {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 75px;
+    color: #f7f7f7;
+    font-size: 2.2em;
+    background-color: #555555;
+    border: none;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.minimize:hover {
+    background-color: #1E90FF;
+}
+
+.maximize {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: 20px;
+    color: #f7f7f7;
+    font-size: 2.2em;
+    background-color: #555555;
+    border: none;
+    border-radius: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(0);
+}
+
+.maximize:hover {
+    background-color: #1E90FF;
 }
