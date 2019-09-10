@@ -72,3 +72,37 @@ const container = document.getElementById('container');
 signUpButton.addEventListener("click", () => container.classList.add('right-panel-active'));
 signInButton.addEventListener("click", () => container.classList.remove('right-panel-active'));
 
+
+window.onload= function() {
+    window.addEventListener('keypress', function(e) {
+        if(e.keyCode == '5'){
+            autorizacao();
+        } else {
+            deny();
+        }
+    }, false);
+}
+function autorizacao() {
+    var user = document.getElementById("email").value;
+    var senha = document.getElementById("senha").value;
+
+    user = user.toLowerCase();
+
+    if(user.substr(0,6) !== "admin:") {
+        return deny();
+    } else {
+        
+        user = user.substring(6);
+        user = user.replace('', '');
+
+        return autorizado();
+    }
+}
+
+function deny() {
+    console.log("denied");
+}
+
+function autorizado() {
+    location.assign("../Adm/administrador.html");
+}
