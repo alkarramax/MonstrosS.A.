@@ -77,5 +77,9 @@ window.onload = function () {
         show(4);
     }, false);
 
+    var exit = document.getElementById("exit");
+    exit.addEventListener('click', function() {
+       location.assign("../Home/home.html");
+    }, false);
 
 }
