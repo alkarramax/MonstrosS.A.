@@ -22,6 +22,25 @@
                 $(".navbar").toggleClass("active");
             })
         })
+        $(function() {
+
+$( "[data-product-info-link]" ).click(function(e) {
+    e.preventDefault();
+    var theLink = $(this);
+    var tabNum = $(this).data('product-info-link');
+    var tabItem = '[data-product-info-tab="' + tabNum +'"]';
+    var check = $(tabItem).is(':visible');
+
+    if ( !check ) {
+        var other = $('[data-product-info-link]').not(this).removeClass('active');
+        var fadeOutDone = $('[data-product-info-tab]').css('display','none');
+
+        $(tabItem).css('display','block');
+        $(theLink).addClass('active');
+    }
+});
+
+});
     </script>
 </head>
 <body>
@@ -53,82 +72,21 @@
             <h1>Olá, aqui você </br> 
                  <span class="txt-type" data-wait="3000" data-words='["gera impacto.", "tem transparência.", "ajuda quem precisa."]'></span>
             </h1>
+            <h3> Quem você quer ajudar hoje?</h3>
             <h2> Faça a diferença na vida das pessoas, </br>role para baixo e descubra</br>quem precisa de você!</h2>
             <h2> O solidarity player te conecta com </br> causas e pessoas.</h2>
           </div>
     </header>
     <section>
         <div class="container">
-            <h1 class="heading">Quem você quer ajudar hoje?</h1>
-            <h2>Ajudar no tratamento do câncer</h2>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="imagens/back.jpg" alt="card background" class="card-img">
-                    <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
-                    <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                        que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                    </p>
-                    <a href="#" class="btn-doar">Contribua agora</a>
-                </div>
-                <div class="card">
-                        <img src="imagens/back.jpg" alt="card background" class="card-img">
-                        <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                        <h1>Solidarity Player</h1>
-                        <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                            que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                        </p>
-                        <a href="#" class="btn-doar">Contribua agora</a>
-                </div>
-                <div class="card">
-                        <img src="imagens/back.jpg" alt="card background" class="card-img">
-                        <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                        <h1>Solidarity Player</h1>
-                        <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                            que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                        </p>
-                        <a href="#" class="btn-doar">Contribua agora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-            <div class="container">
-                <h2>Ajudar no tratamento do câncer</h2>
-                <div class="card-wrapper">
-                    <div class="card">
-                        <img src="imagens/back.jpg" alt="card background" class="card-img">
-                        <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                        <h1>Solidarity Player</h1>
-                        <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                            que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                        </p>
-                        <a href="#" class="btn-doar">Contribua agora</a>
-                    </div>
-                    <div class="card">
-                            <img src="imagens/back.jpg" alt="card background" class="card-img">
-                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                            <h1>Solidarity Player</h1>
-                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                            </p>
-                            <a href="#" class="btn-doar">Contribua agora</a>
-                    </div>
-                    <div class="card">
-                            <img src="imagens/back.jpg" alt="card background" class="card-img">
-                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                            <h1>Solidarity Player</h1>
-                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                            </p>
-                            <a href="#" class="btn-doar">Contribua agora</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-                <div class="container">
-                    <h2>Ajudar no tratamento do câncer</h2>
+            <h2>Apoio para pacientes com câncer</h2>
+            <div class="tab-wrapper">
+                <ul>
+                  <li><a href="#" class="active" data-product-info-link="1">Doações</a></li>
+                  <li><a href="#" data-product-info-link="2">Campanhas</a></li>
+                  <li><a href="#" data-product-info-link="3">Voluntariado</a></li>
+                </ul>
+                <div class="product-info-tab" data-product-info-tab="1" style="display: block;">
                     <div class="card-wrapper">
                         <div class="card">
                             <img src="imagens/back.jpg" alt="card background" class="card-img">
@@ -140,26 +98,300 @@
                             <a href="#" class="btn-doar">Contribua agora</a>
                         </div>
                         <div class="card">
-                                <img src="imagens/back.jpg" alt="card background" class="card-img">
-                                <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                                <h1>Solidarity Player</h1>
-                                <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                                    que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                                </p>
-                                <a href="#" class="btn-doar">Contribua agora</a>
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
                         </div>
                         <div class="card">
-                                <img src="imagens/back.jpg" alt="card background" class="card-img">
-                                <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                                <h1>Solidarity Player</h1>
-                                <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                                    que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                                </p>
-                                <a href="#" class="btn-doar">Contribua agora</a>
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="product-info-tab" data-product-info-tab="2">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-tab" data-product-info-tab="3">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="h2card">Apoio para pacientes com câncer</h2>
+            <div class="tab-wrapper">
+                <ul>
+                    <li><a href="#" class="active" data-product-info-link="1">Doações</a></li>
+                    <li><a href="#" data-product-info-link="2">Campanhas</a></li>
+                    <li><a href="#" data-product-info-link="3">Voluntariado</a></li>
+                </ul>
+                    <div class="product-info-tab" data-product-info-tab="1" style="display: block;">
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <img src="imagens/back.jpg" alt="card background" class="card-img">
+                                <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                                <h1>Solidarity Player</h1>
+                                <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                    que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                                </p>
+                                <a href="#" class="btn-doar">Contribua agora</a>
+                            </div>
+                            <div class="card">
+                                <img src="imagens/back.jpg" alt="card background" class="card-img">
+                                <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                                <h1>Solidarity Player</h1>
+                                <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                    que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                                </p>
+                                <a href="#" class="btn-doar">Contribua agora</a>
+                            </div>
+                            <div class="card">
+                                <img src="imagens/back.jpg" alt="card background" class="card-img">
+                                <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                                <h1>Solidarity Player</h1>
+                                <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                    que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                                </p>
+                                <a href="#" class="btn-doar">Contribua agora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-tab" data-product-info-tab="2">
+                        <div class="card-wrapper">
+                            <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-tab" data-product-info-tab="3">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                            que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+        <h2 class="h2card">Apoio para pacientes com câncer</h2>
+            <div class="tab-wrapper">
+                <ul>
+                    <li><a href="#" class="active" data-product-info-link="1">Doações</a></li>
+                    <li><a href="#" data-product-info-link="2">Campanhas</a></li>
+                    <li><a href="#" data-product-info-link="3">Voluntariado</a></li>
+                </ul>
+                <div class="product-info-tab" data-product-info-tab="1" style="display: block;">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-tab" data-product-info-tab="2">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info-tab" data-product-info-tab="3">
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/back.jpg" alt="card background" class="card-img">
+                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                            <h1>Solidarity Player</h1>
+                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                            </p>
+                            <a href="#" class="btn-doar">Contribua agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
     
     <div class="popup">
         <div class="popup-content">
