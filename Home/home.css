@@ -103,10 +103,9 @@ nav.navFixed .logo img{
 }
 
  .menu ul li a{
-    font-size: 0.9rem; 
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
-    font-family: 'Light', sans-serif;
 }
 
 .menu ul li a::after{
@@ -241,7 +240,7 @@ nav.navFixed .logo img{
 }
 
   .leftside h2{
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       color: #000;
       line-height: 35px;
       font-family: 'WorkSansLight', sans-serif;
