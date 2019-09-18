@@ -45,11 +45,12 @@ nav.navFixed{
 }
 
 nav.navFixed ul li a{
-    color: #000;
+    color: #333;
+    font-weight: 700;
 }
 
 nav.navFixed ul li a::after{
-    background: #000;
+    background: #333;
 }
 
 nav.navFixed ul{
@@ -81,7 +82,7 @@ nav.navFixed .logo img{
 .logo h1{
     font-size: 1.6rem;
     padding: 30px 0 0 10px;
-    color: black;
+    color: #333;
 }
 
 .menu{
@@ -99,7 +100,9 @@ nav.navFixed .logo img{
 
 .menu ul li{
     list-style: none;
+
 }
+
 
  .menu ul li a{
     font-size: 1rem;
@@ -228,6 +231,7 @@ nav.navFixed .logo img{
   .leftside h1 {
     font-size: 3rem;
     line-height: 80px;
+    color:#333;
   }  
 
   .leftside h3{
@@ -239,7 +243,7 @@ nav.navFixed .logo img{
 
   .leftside h2{
       font-size: 1.3rem;
-      color: #000;
+      color: #333;
       line-height: 35px;
       font-family: 'WorkSansLight', sans-serif;
   }
@@ -259,7 +263,6 @@ nav.navFixed .logo img{
 .tab-wrapper ul {
     list-style: none;
     display: flex;
-    padding: 40px 0 0 0;
     justify-content: center;
   }
 
