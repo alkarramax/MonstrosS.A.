@@ -6,6 +6,7 @@
     font-family: WorkSansLight;
     src: url('fontes/WorkSans-ExtraLight.ttf');
 }
+
 *{
     -webkit-box-sizing: border-box;  /* Interpretação de navegadores*/
     -moz-box-sizing: border-box;
@@ -19,32 +20,37 @@ body{
 }
 
 nav{
-    display: flex;
-    padding: 40px 0 0 150px;
+    padding: 5% 0 0 10%;
 }
 
 nav img{
     width: 50px;
     padding-left: 10px;
+    padding-bottom: 20px;
 }
 
-.back input{
-    padding-top: 5px;
+ input{
     width: 30px;
+    border: none;
+    outline: 0;
 }
 
 .text-sobre{
-    width: 90%;
-    padding: 40px 0 0 150px;
-    color: #455a64;
+    width: 82%;
+    padding: 1% 0 0 10%;
+    color: #78909c;
+    line-height:20px;
+    font-size: 1rem;
+
 }
 
 .text-sobre h2{
     color: #01bcd5;
+    font-family: WorkSansLight;
 }
 
 form{
-    padding-left: 150px
+    padding-left: 10%;
 }
 
 .form-separator{
@@ -54,7 +60,7 @@ form{
 }
 
 .input{
-    padding-left: 20px;
+    padding-left: 5%;
     width: 40%;
 }
 
@@ -107,11 +113,22 @@ form{
 
 .input2{
     padding-left: 20px;
-    width: 29%;
+    width: 27%;
 }
 
 .input2:first-child{
     padding-left: 0;
+}
+
+.button-doar{
+    padding: 2% 0 0 38%;
+}
+
+.button-doar button{
+    background-color: #01bcd5;
+    border: #01bcd5;
+    height: 50px;;
+    width: 300px;
 }
 
 
