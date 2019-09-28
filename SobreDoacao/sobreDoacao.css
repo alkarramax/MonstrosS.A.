@@ -29,6 +29,19 @@ nav img{
     padding-bottom: 20px;
 }
 
+nav .btn{
+    width: 25%;
+    height: 58px;
+    margin-left: 53%;
+    color: #01bcd5;
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px solid #cfd8dc;
+    font-size: 0.9rem;
+}
+
+
+
  input{
     width: 30px;
     border: none;
@@ -36,7 +49,7 @@ nav img{
 }
 
 .text-sobre{
-    width: 82%;
+    width: 89%;
     padding: 1% 0 0 10%;
     color: #78909c;
     line-height:20px;
@@ -60,8 +73,8 @@ form{
 }
 
 .input{
-    padding-left: 5%;
-    width: 40%;
+    padding-left: 2%;
+    width: 43%;
 }
 
 .caixa-input{
@@ -113,7 +126,7 @@ form{
 
 .input2{
     padding-left: 20px;
-    width: 27%;
+    width: 29%;
 }
 
 .input2:first-child{
@@ -129,6 +142,7 @@ form{
     border: #01bcd5;
     height: 50px;;
     width: 300px;
+    font-weight: bold;
 }
 
 
