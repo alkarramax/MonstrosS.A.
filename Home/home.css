@@ -409,7 +409,7 @@ nav.navFixed .logo img{
 
 .container-sobre-img{
     width: 55%;
-    height: 650px;
+    height: 660px;
     background: #fff;
     text-align: center;
     box-shadow: .3rem .3rem 3rem rgba(0,0,0,0.2);
@@ -450,6 +450,40 @@ nav.navFixed .logo img{
     color: #fff;
     text-align: center;
 }
+
+.function h1{
+    font-size: 2.7rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+    padding: 90px 0 50px 0;
+}
+
+.container-function{
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.container-function-sobre{
+    width: 30%;
+    text-align: center;
+}
+.container-function-sobre2{
+    text-align: center;
+}
+.container-function-sobre2 img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.container-function-sobre img{
+    width: 200px;
+    height: 200px;
+}
+
 .popup {
     background: rgba(0,0,0,0.6);
     width: 100%;
