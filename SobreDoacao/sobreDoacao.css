@@ -23,6 +23,15 @@ nav{
     padding: 5% 0 0 10%;
 }
 
+nav svg{
+    cursor: pointer;
+    color: #cfd8dc;
+}
+
+nav svg:hover{
+   color:  #01bcd5;
+}
+
 nav img{
     width: 50px;
     padding-left: 10px;
@@ -39,8 +48,6 @@ nav .btn{
     border:1px solid #cfd8dc;
     font-size: 0.9rem;
 }
-
-
 
  input{
     width: 30px;

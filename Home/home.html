@@ -41,11 +41,17 @@ $( "[data-product-info-link]" ).click(function(e) {
 });
 
 });
+
+jQuery(document).ready(function($){
+    $(".ancora-scroll").click(function(event){
+        event.preventDefault();
+        $("html,body").animate({scrollTop:$(this.hash).offset().top},800)
+    });
+});
     </script>
 </head>
 <body>
     <header class="header">
-        
         <nav class="navbar-one">
             <div class="responsive-bar">
             <div class="responsive-logo">
@@ -61,10 +67,10 @@ $( "[data-product-info-link]" ).click(function(e) {
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Sobre</a></li>
+                        <li><a class="ancora-scroll" href="#causas">Causas</a></li>
+                        <li><a class="ancora-scroll" href="#sobre">Sobre</a></li>
+                        <li><a class="ancora-scroll" href="#como-funciona">Como funciona?</a></li>
                         <li><a class="nav-link" href="#" id="popUpAparecer">Login</a></li>
-                        <li><a href="">Como funciona?</a></li>
                     </ul>
                 </div>
             </div>
@@ -79,7 +85,7 @@ $( "[data-product-info-link]" ).click(function(e) {
           </div>
     </header>
     <section>
-        <div class="container">
+        <div id="causas" class="causa1">
             <h2>Apoio para pacientes com câncer</h2>
             <div class="tab-wrapper">
                 <ul>
@@ -184,7 +190,7 @@ $( "[data-product-info-link]" ).click(function(e) {
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="causa">
             <h2 class="h2card">Apoio para pacientes com câncer</h2>
             <div class="tab-wrapper">
                 <ul>
@@ -289,7 +295,7 @@ $( "[data-product-info-link]" ).click(function(e) {
         </div>
     </section>
     <section>
-        <div class="container">
+        <div class="causa">
         <h2 class="h2card">Apoio para pacientes com câncer</h2>
             <div class="tab-wrapper">
                 <ul>
@@ -393,7 +399,7 @@ $( "[data-product-info-link]" ).click(function(e) {
             </div>
         </div> 
     </section>
-    <section class="sobre">
+    <section id="sobre" class="sobre">
         <h1> Como o grupo Solidario ajudou </br> milhares de pessoas?</h1>
         <div class="container-sobre">
             <div class="container-sobre-img">
@@ -429,22 +435,22 @@ $( "[data-product-info-link]" ).click(function(e) {
             </div>
         </div>
     </section>
-    <section class="function">
+    <section id="como-funciona" class="como-funciona">
         <h1>Como funciona?</h1>
-        <div class="container-function">
-            <div class="container-function-sobre">
+        <div class="container">
+            <div class="container-sobre">
                 <img src="imagens/Design sem nome (6).png" alt="">
                 <p>Dapibus nam elit condimentum sollicitudin inceptos accumsan odio in mattis elit, 
                     venenatis litora pulvinar sed sit fusce elit sagittis vestibulum.</p>
             </div>
-            <div class="container-function-sobre">
+            <div class="container-sobre">
                     <img src="imagens/Design sem nome (7).png" alt="">
                     <p>Dapibus nam elit condimentum sollicitudin inceptos accumsan odio in mattis elit, 
                         venenatis litora pulvinar sed sit fusce elit sagittis vestibulum.</p>
             </div>
         </div>
         <div class="container-function2">
-            <div class="container-function-sobre2">
+            <div class="container-sobre2">
                 <img src="imagens/Design sem nome (8).png" alt="">
                 <p>Dapibus nam elit condimentum sollicitudin </br> inceptos accumsan odio in mattis elit,
                     venenatis </br> litora pulvinar sed sit fusce elit sagittis vestibulum.</p>
@@ -495,6 +501,9 @@ $( "[data-product-info-link]" ).click(function(e) {
             </div>
         </div>
     </div>
+    <footer>
+        
+    </footer>
     <script src="home.js"></script>
 </body>
 </html>

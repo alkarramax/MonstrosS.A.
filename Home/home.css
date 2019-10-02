@@ -159,7 +159,7 @@ nav.navFixed .logo img{
     cursor: pointer;
 }
 
-@media (max-width:830px) {
+@media screen and (min-width: 0px) and (max-width: 816px) {
 
     .responsive-bar{
         display: flex;
@@ -221,6 +221,23 @@ nav.navFixed .logo img{
         background-size: 500px 300px;
         background-position: right 100px;
     }
+    .container{
+        padding-top: 1400px;
+    }
+    .sobre{
+        padding-top: 1400px;
+    }
+}
+
+@media screen and (min-width: 816px) and (max-width: 1200px){
+
+    .container{
+        padding-top: 700px
+    }
+
+    .sobre{
+        padding-top: 700px;
+    }
 }
 
 
@@ -253,7 +270,14 @@ nav.navFixed .logo img{
     color: #0dae7a;
   }
 
-.container h2{
+.causa h2{
+    font-size: 2.7rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.causa1 h2{
     font-size: 2.7rem;
     text-align: center;
     color: #333;
@@ -373,6 +397,10 @@ nav.navFixed .logo img{
     text-decoration: none;
 }
 
+.card .btn-doar:hover{
+    background: #494949;
+}
+
 @media screen and (min-width: 700px){
     .card-wrapper{
         flex-direction: row;
@@ -398,16 +426,16 @@ nav.navFixed .logo img{
     padding: 90px 0 50px 0;
 }
 
-.container-sobre-info h2{
+.sobre .container-sobre-info h2{
     color: #333;
 }
 
-.container-sobre{
+.sobre .container-sobre{
     justify-content: center;
     display: flex;
 }
 
-.container-sobre-img{
+.sobre .container-sobre-img{
     width: 55%;
     height: 660px;
     background: #fff;
@@ -415,33 +443,34 @@ nav.navFixed .logo img{
     box-shadow: .3rem .3rem 3rem rgba(0,0,0,0.2);
 }
 
-.container-sobre-img h4{
+.sobre .container-sobre-img h4{
     font-size: 1.3rem;
     color: #333;
     
 }
 
-.container-sobre-img p{
-    font-size: 1.1rem;
-    color: #333;
+.sobre .container-sobre-img p{
+    color: #4b636e;
+    line-height: 20px;
+    font-size: 1rem;
 }
 
-.container-sobre-info{
+.sobre .container-sobre-info{
     width: 30%;
     text-align: center;
 }
 
-.container-sobre-img img{
+.sobre .container-sobre-img img{
     width: 95%;
     height: 460px;
     padding-top: 20px;
 }
 
-.sobre-info{
+.sobre .sobre-info{
     padding: 30px 0 0 80px;
 }
 
-.sobre-info .info{
+.sobre .sobre-info .info{
     width: 80%;
     height: 60px;
     border-radius: 10px;
@@ -451,35 +480,36 @@ nav.navFixed .logo img{
     text-align: center;
 }
 
-.function h1{
+.como-funciona h1{
     font-size: 2.7rem;
     text-align: center;
     color: #333;
     position: relative;
-    padding: 90px 0 50px 0;
+    padding: 70px 0 50px 0;
 }
 
-.container-function{
+.como-funciona .container{
     display: flex;
-    padding-left: 50px;
+    padding-left: 10px 0 0 50px;
     justify-content: space-around;
-    padding-top: 20px;
 }
 
-.container-function-sobre{
+.como-funciona .container-sobre{
     width: 30%;
     text-align: center;
+    font-weight: bold;
 }
-.container-function-sobre2{
+
+.como-funciona .container-sobre2{
     text-align: center;
+    font-weight: bold;
 }
-.container-function-sobre2 img{
+.como-funciona .container-sobre2 img{
     width: 200px;
     height: 200px;
 }
 
-
-.container-function-sobre img{
+.como-funciona .container-sobre img{
     width: 200px;
     height: 200px;
 }
