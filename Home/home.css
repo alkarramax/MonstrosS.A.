@@ -757,3 +757,24 @@ button.ghost {
 .modal-close {
 	cursor: pointer;
 }
+
+.img-impacto {
+    width: 100%;
+    height: 80vh;
+    background-image: url("imagens/people-3137670_1920.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.img-impacto h1{
+    font-size: 4rem;
+    padding-top: 150px;
+}
+
+.img-impacto h2{
+    font-size: 3rem;
+}

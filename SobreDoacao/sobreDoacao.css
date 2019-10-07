@@ -49,6 +49,11 @@ nav .btn{
     font-size: 0.9rem;
 }
 
+nav .btn:hover{
+    background-color: #8d8d8d;
+    border: #8d8d8d;
+}
+
  input{
     width: 30px;
     border: none;
