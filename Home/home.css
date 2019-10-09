@@ -446,13 +446,14 @@ nav.navFixed .logo img{
 .sobre .container-sobre-img h4{
     font-size: 1.3rem;
     color: #333;
-    
 }
 
 .sobre .container-sobre-img p{
     color: #4b636e;
     line-height: 20px;
     font-size: 1rem;
+    text-align: left; 
+    padding-left: 20px;
 }
 
 .sobre .container-sobre-info{
@@ -479,6 +480,39 @@ nav.navFixed .logo img{
     color: #fff;
     text-align: center;
 }
+
+.sobre .container-sobre-pacto-global{
+    display: flex;
+    padding-top: 150px;
+    justify-content: center;
+    
+}
+
+.sobre .container-sobre-pacto-global img{
+    width: 17%;
+    height: 45vh;
+}
+
+.sobre .container-sobre-info-pacto-global{
+    width: 70%;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.sobre .container-sobre-info-pacto-global .title{
+    border-bottom: 5px solid #0dae7a;
+    width: 31%;
+    height: 60px;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.sobre .container-sobre-info-pacto-global p{
+    color: #4b636e;
+    line-height: 20px;
+    font-size: 1rem;
+}
+
 
 .como-funciona h1{
     font-size: 2.7rem;
@@ -761,7 +795,7 @@ button.ghost {
 .img-impacto {
     width: 100%;
     height: 80vh;
-    background-image: url("imagens/people-3137670_1920.png");
+    background-image: url("imagens/people-3137670_1920\ \(2\).png");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 80px;
@@ -777,4 +811,56 @@ button.ghost {
 
 .img-impacto h2{
     font-size: 3rem;
+}
+
+.img-impacto2 {
+    width: 100%;
+    height: 80vh;
+    background-image: url("imagens/people-3137672_1920\ \(1\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.img-impacto2 h1{
+    font-size: 4rem;
+    padding-top: 150px;
+}
+
+.img-impacto2 h2{
+    font-size: 3rem;
+}
+
+footer{
+    padding-top: 150px;
+}
+
+.footer-info{
+    display: flex;
+    color: #fff;
+    background-color: #0dae7a;
+    height: 140px;
+}
+
+.footer-logo{
+    display: flex;
+    width: 30%;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.footer-logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.footer-logo h2{
+    padding-left: 10px;
+}
+
+.footer-nav-menu{
+    height: 200px;
+    background-color: #1e2326;
 }
