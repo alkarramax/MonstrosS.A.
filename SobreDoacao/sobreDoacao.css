@@ -74,6 +74,23 @@ nav .btn:hover{
     font-family: WorkSansLight;
 }
 
+.text-sobre-info{
+    display: flex;
+    width: 89%;
+    padding: 1% 0 0 10%;
+}
+
+.text-sobre-info p{
+    color: #78909c;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+.text-sobre-info-detalhe{
+    display: flex;
+    padding-right: 6%;
+}
+
 form{
     padding-left: 10%;
 }
