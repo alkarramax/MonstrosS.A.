@@ -246,7 +246,7 @@ nav.navFixed .logo img{
         padding-top: 1400px;
     }
     .sobre{
-        padding-top: 1400px;
+        padding-top: 50px;
     }
 
     .menu ul .deslogar{
@@ -258,6 +258,11 @@ nav.navFixed .logo img{
     .menu ul .deslogar li{
         padding: 3px 0 0 0;
     }
+
+    #sobre{
+        padding-top: 1400px;
+    }
+
 }
 
 @media screen and (min-width: 816px) and (max-width: 1200px){
