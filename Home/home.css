@@ -103,6 +103,11 @@ nav.navFixed .logo img{
     height: 50px;
 }
 
+.menu ul li:last-child{
+    width: 150px;
+    text-align: center;
+}
+
 
  .menu ul li a{
     font-size: 1rem;
@@ -140,6 +145,7 @@ nav.navFixed .logo img{
 }
 
 .menu ul li:hover > .deslogar{
+    width: 150px;
     display: block;
 }
 
@@ -261,6 +267,14 @@ nav.navFixed .logo img{
 
     #sobre{
         padding-top: 1400px;
+    }
+
+    .container-sobre{
+        flex-direction: column;
+    }
+
+    .sobre .container-sobre-img{
+        width: 80%;
     }
 
 }
@@ -874,29 +888,17 @@ footer{
 }
 
 .footer-info{
-    display: flex;
-    color: #fff;
-    background-color: #0dae7a;
-    height: 140px;
-}
-
-.footer-logo{
-    display: flex;
-    width: 30%;
-    padding-top: 30px;
-    justify-content: center;
-}
-
-.footer-logo img{
-    width: 70px;
-    height: 70px;
-}
-
-.footer-logo h2{
-    padding-left: 10px;
-}
-
-.footer-nav-menu{
-    height: 200px;
+    width: 100%;
+    height: 300px;
     background-color: #1e2326;
+    text-align: center;
+}
+.footer-info .footer-info-img{
+    padding-top: 70px;
+    align-items: center;
+}
+
+.footer-info .footer-info-img img{
+    width: 50px;
+    height: 50px;
 }
