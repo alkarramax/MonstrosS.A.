@@ -181,6 +181,64 @@ nav.navFixed .logo img{
 
 @media screen and (min-width: 0px) and (max-width: 816px) {
 
+    .leftside h1{
+        padding-top: 200px;
+        font-size: 1.5rem;
+    }
+    .header{
+        background-image: url("imagens/Design\ sem\ nome\ \(13\).png");
+        background-size: 500px 300px;
+        background-position: right 100px;
+    }
+    .causa{
+        padding-top: 1400px;
+    }
+    .sobre{
+        padding-top: 50px;
+    }
+
+    .menu ul .deslogar{
+        background-color: #eee;
+        height: 30px;
+        padding: 0;
+    }
+
+    .menu ul .deslogar li{
+        padding: 3px 0 0 0;
+    }
+
+    #sobre{
+        padding-top: 1400px;
+    }
+
+    .sobre .container-sobre{
+        flex-direction: column;
+    }
+
+     .container-sobre-img{
+        width: 100% !important;
+        height: 690px !important;
+    }
+
+    .container-sobre-info{
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width: 816px) and (max-width: 1200px){
+
+    .causa{
+        padding-top: 700px
+    }
+
+    #sobre{
+        padding-top: 700px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px){
+
     .responsive-bar{
         display: flex;
     }
@@ -232,57 +290,7 @@ nav.navFixed .logo img{
     .active{
         display: block;
     }
-    .leftside h1{
-        padding-top: 200px;
-        font-size: 1.5rem;
-    }
-    .header{
-        background-image: url("imagens/Design\ sem\ nome\ \(13\).png");
-        background-size: 500px 300px;
-        background-position: right 100px;
-    }
-    .causa{
-        padding-top: 1400px;
-    }
-    .sobre{
-        padding-top: 50px;
-    }
-
-    .menu ul .deslogar{
-        background-color: #eee;
-        height: 30px;
-        padding: 0;
-    }
-
-    .menu ul .deslogar li{
-        padding: 3px 0 0 0;
-    }
-
-    #sobre{
-        padding-top: 1400px;
-    }
-
-    .container-sobre{
-        flex-direction: column;
-    }
-
-    .sobre .container-sobre-img{
-        width: 80%;
-    }
-
 }
-
-@media screen and (min-width: 816px) and (max-width: 1200px){
-
-    .causa{
-        padding-top: 700px
-    }
-
-    .sobre{
-        padding-top: 700px;
-    }
-}
-
 
 .leftside {
     padding: 140px 0 0 60px;
@@ -445,6 +453,7 @@ nav.navFixed .logo img{
 }
 
 @media screen and (min-width: 700px){
+    
     .card-wrapper{
         flex-direction: row;
         flex-wrap: wrap;
