@@ -235,6 +235,10 @@ nav.navFixed .logo img{
     #sobre{
         padding-top: 700px;
     }
+
+    .container-sobre-img{
+        height: 720px !important;
+    }
 }
 
 @media screen and (min-width: 0px) and (max-width: 900px){

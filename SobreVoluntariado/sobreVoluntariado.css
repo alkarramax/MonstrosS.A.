@@ -163,7 +163,8 @@ form{
 }
 
 .button-doar{
-    padding: 2% 0 0 38%;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .button-doar button{
