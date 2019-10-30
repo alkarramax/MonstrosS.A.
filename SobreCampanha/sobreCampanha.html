@@ -10,12 +10,6 @@
     <title>Campanha</title>
     <link rel="shortcut icon" type="image/x-icon" href="imagens/7618Logo.ico">
 </head>
-<script>
-    function Nova()
-{
-    location.href="../Home/home.html"
-}
-</script>
 <body>
     <nav>
         <svg  onclick="Nova()" id="i-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -35,7 +29,7 @@
     </div>
     <div class="text-sobre-info"> 
         <div class="text-sobre-info-detalhe">
-            <p>Local onde poderá levar a doação:</p>
+            <p>Local:</p>
             <p>Softplan recepção</p>
         </div>
         <div class="text-sobre-info-detalhe">
@@ -53,7 +47,7 @@
                     <div class="input">
                         <div class="caixa-input">
                             <img src="../imagensSobre/avatar.png" alt=""/>
-                            <input src id="name" type="text" placeholder="Nome"/> <!--placeholder="" dica do input-->
+                            <input id="name" type="text" placeholder="Nome"/> <!--placeholder="" dica do input-->
                         </div>
                     </div>
                     <div class="input">
@@ -64,29 +58,30 @@
                     </div>
                 </div>
                 <div class="form-separator">
-                    <div class="input2">
-                        <div class="caixa-input2">
-                            <img src="../imagensSobre/wallet (1).png" alt=""/>
-                            <input id="cpf" type="text" placeholder="CPF"/> 
-                        </div>
-                    </div>
-                    <div class="input2">
-                        <div class="caixa-input2">
+                    <div class="input">
+                        <div class="caixa-input">
                             <img src="../imagensSobre/suitcase.png" alt=""/>
-                            <input id="cargo" type="text" placeholder="Cargo"/> 
+                            <input id="cargo" type="text" placeholder="Cargo"/> <!--placeholder="" dica do input-->
                         </div>
                     </div>
-                    <div class="input2">
-                        <div class="caixa-input2">
+                    <div class="input">
+                        <div class="caixa-input">
                             <img src="../imagensSobre/office-block.png" alt=""/>
                             <input id="unidade" type="text" placeholder="Unidade"/> 
                         </div>
                     </div>
                 </div>
+                
             </form>
             <div class="button-doar">
                     <button type="button" class="btn btn-primary">Participar</button>
             </div>
         </div>
+        <script>
+            function Nova()
+        {
+            location.href="../Home/home.html"
+        }
+        </script>
 </body>
 </html>
