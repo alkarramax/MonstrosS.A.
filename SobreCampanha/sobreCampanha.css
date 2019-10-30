@@ -38,22 +38,6 @@ nav img{
     padding-bottom: 20px;
 }
 
-nav .btn{
-    width: 25%;
-    height: 58px;
-    margin-left: 53%;
-    color: #01bcd5;
-    background-color: #fff;
-    border-radius: 5px;
-    border:1px solid #cfd8dc;
-    font-size: 0.9rem;
-}
-
-nav .btn:hover{
-    background-color: #8d8d8d;
-    border: #8d8d8d;
-}
-
  input{
     width: 30px;
     border: none;

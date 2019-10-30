@@ -211,10 +211,6 @@ nav.navFixed .logo img{
         padding-top: 1400px;
     }
 
-    .sobre .container-sobre{
-        flex-direction: column;
-    }
-
      .container-sobre-img{
         width: 100% !important;
         height: 690px !important;
@@ -223,7 +219,6 @@ nav.navFixed .logo img{
     .container-sobre-info{
         width: 100% !important;
     }
-
 }
 
 @media screen and (min-width: 816px) and (max-width: 1200px){
@@ -491,6 +486,7 @@ nav.navFixed .logo img{
 .sobre .container-sobre{
     justify-content: center;
     display: flex;
+    flex-wrap: wrap; 
 }
 
 .sobre .container-sobre-img{
