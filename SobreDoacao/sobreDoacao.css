@@ -76,6 +76,10 @@ nav img{
     padding-left: 5px;
 }
 
+.text-sobre-info-detalhe .info p{
+    color: #01bcd5;
+}
+
 .text-sobre-info .text-sobre-info-detalhe p:first-child{
     padding-left: 0;
 }
