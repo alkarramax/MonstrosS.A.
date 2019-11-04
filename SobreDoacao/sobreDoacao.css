@@ -66,6 +66,8 @@ nav img{
 
 .text-sobre-info{
     display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
     width: 90%;
     padding: 1% 0 0 10% ;
 }

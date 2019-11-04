@@ -457,6 +457,7 @@ nav.navFixed .logo img{
 
 .card p{
     height: 200px;
+    overflow: hidden;
 }
 
 .card .btn-doar:hover{
