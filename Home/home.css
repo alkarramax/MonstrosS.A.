@@ -88,7 +88,6 @@ nav.navFixed .logo img{
 .menu{
     width: 50%;
     height: 100px;
-
 }
 
 .menu ul{
@@ -191,9 +190,18 @@ nav.navFixed .logo img{
         background-size: 500px 300px;
         background-position: right 100px;
     }
-    .causa{
-        padding-top: 1400px;
+
+    .causa1{
+        padding-top: 50px;
     }
+    .causa{
+        padding-top: 1450px;
+    }
+
+    .tab-wrapper ul {
+        padding-right: 70px;
+    }
+
     .sobre{
         padding-top: 50px;
     }
@@ -221,7 +229,17 @@ nav.navFixed .logo img{
         width: 100% !important;
     }
 
+    .sobre .container-sobre-pacto-global img{
+       display: none;
+    }
 
+    .sobre .container-sobre-info-pacto-global .title{
+        width: 90% !important;
+    }
+
+    .sobre .container-sobre-info-pacto-global {
+        padding-top: 0;
+    }
 }
 
 @media screen and (min-width: 816px) and (max-width: 1200px){
@@ -239,7 +257,7 @@ nav.navFixed .logo img{
     }
 }
 
-@media screen and (min-width: 0px) and (max-width: 900px){
+@media screen and (min-width: 0px) and (max-width: 1300px){
 
     .responsive-bar{
         display: flex;
@@ -372,6 +390,7 @@ nav.navFixed .logo img{
       width: 100%;
       transition: width .3s;
   }
+  
   .tab-wrapper ul li a.active {
     color: #0dae7a;
   }
@@ -548,7 +567,6 @@ nav.navFixed .logo img{
     display: flex;
     padding-top: 150px;
     justify-content: center;
-    
 }
 
 .sobre .container-sobre-pacto-global img{
@@ -760,8 +778,7 @@ button.ghost {
 }
 
 .overlay {
-    background: #ff416c;
-    background: linear-gradient(to right, #69f0ae, #2bbd7e) no-repeat 0 0 / cover;
+    background-color:  #2bbd7e;
     color: #fff;
     position: relative;
     left: -100%;
