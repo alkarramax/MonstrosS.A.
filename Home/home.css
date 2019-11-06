@@ -216,7 +216,7 @@ nav.navFixed .logo img{
         padding: 3px 0 0 0;
     }
 
-    #sobre{
+    .sobre-img-impacto{
         padding-top: 1400px;
     }
 
@@ -248,8 +248,12 @@ nav.navFixed .logo img{
         padding-top: 700px
     }
 
-    #sobre{
+    .sobre-img-impacto{
         padding-top: 700px;
+    }
+
+    .sobre .container-sobre-info-pacto-global .title{
+        width: 70% !important;
     }
 
     .container-sobre-img{
