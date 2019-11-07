@@ -199,7 +199,7 @@ nav.navFixed .logo img{
     }
 
     .tab-wrapper ul {
-        padding-right: 70px;
+        padding-right: 40px;
     }
 
     .sobre{
@@ -373,6 +373,10 @@ nav.navFixed .logo img{
       padding-left: 40px
   }
 
+  .tab-wrapper ul li:first-child{
+    padding-left: 0;
+}
+
   .tab-wrapper ul li a {
     color: #333;
     font-weight: bold;
@@ -478,6 +482,10 @@ nav.navFixed .logo img{
     text-decoration: none;
 }
 
+.card .btn-doar:hover{  
+    background: #494949;
+}
+
 .card p{
     width: 340px;
     height: 200px;
@@ -485,9 +493,6 @@ nav.navFixed .logo img{
     text-align: none;
 }
 
-.card .btn-doar:hover{
-    background: #494949;
-}
 
 @media screen and (min-width: 700px){
     
@@ -954,9 +959,17 @@ footer{
 }
 
 .footer-info-text p{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fff;
     font-family: WorkSans;
     margin-top: 10px;
+}
+
+.logo-empresas{
+    padding-top: 30px;
+}
+
+.logo-empresas img:first-child{
+    margin-right: 50px;
 }
 
