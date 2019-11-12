@@ -194,9 +194,6 @@ nav.navFixed .logo img{
     .causa1{
         padding-top: 50px;
     }
-    .causa{
-        padding-top: 1450px;
-    }
 
     .tab-wrapper ul {
         padding-right: 40px;
@@ -214,10 +211,6 @@ nav.navFixed .logo img{
 
     .menu ul .deslogar li{
         padding: 3px 0 0 0;
-    }
-
-    .sobre-img-impacto{
-        padding-top: 1400px;
     }
 
      .container-sobre-img{
@@ -244,13 +237,6 @@ nav.navFixed .logo img{
 
 @media screen and (min-width: 816px) and (max-width: 1200px){
 
-    .causa{
-        padding-top: 700px
-    }
-
-    .sobre-img-impacto{
-        padding-top: 700px;
-    }
 
     .sobre .container-sobre-info-pacto-global .title{
         width: 70% !important;
@@ -402,12 +388,14 @@ nav.navFixed .logo img{
   .tab-wrapper ul li a.active {
     color: #0dae7a;
   }
+
   .product-info-tab {
     width: 100%;
     height: 700px;
     display: none;
     animation: .75s fadeIn linear;
   }
+
   @keyframes fadeIn{
     from {
       opacity:0;
@@ -421,12 +409,23 @@ nav.navFixed .logo img{
       padding-top: 90px;
   }
 
+  @media screen and (min-width: 514px) and (max-width: 885px){
+
+    .card{
+        width: 21rem !important;
+    }
+
+}
+
 .card-wrapper{
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
+    width: 95%;
+    margin: 0 2em 2em 2em;
+    overflow: hidden;
+}
+
+.card-wrapper .card{
+    display: inline-block;
+    text-align: center;
 }
 
 .card{
@@ -434,10 +433,7 @@ nav.navFixed .logo img{
     height: 650px;
     background-color: #ebeef8;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
+    margin: 2rem;
     box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
 }
 
@@ -461,21 +457,23 @@ nav.navFixed .logo img{
     font-size: 1.5rem;
     color: #333;
     margin: 1rem 0;
+    text-align: center;
 }
 
-.card .about{
+.card p{
+    width: 95%;
+    height: 200px;
     font-size: 1rem;
-    margin: 1.5rem 0;
-    font-style: italic;
     text-align: center;
     color: #333;
+    overflow: hidden;
+    text-align: center;
 }
 
 .card .btn-doar{
     padding: 1rem 1.5rem;
     background-color: #0dae7a;
     border-radius: 2rem;
-    margin: 1rem 0;
     text-transform: uppercase;
     color:#eee;
     font-size: 1rem;
@@ -484,28 +482,6 @@ nav.navFixed .logo img{
 
 .card .btn-doar:hover{  
     background: #494949;
-}
-
-.card p{
-    width: 340px;
-    height: 200px;
-    overflow: hidden;
-    text-align: none;
-}
-
-
-@media screen and (min-width: 700px){
-    
-    .card-wrapper{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .card{
-        margin: 2rem;
-    }
 }
 
 .sobre h1{
