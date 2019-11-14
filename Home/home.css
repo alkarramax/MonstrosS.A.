@@ -649,7 +649,7 @@ nav.navFixed .logo img{
     width: 100%;
 }
 
-button {
+.popup-content button {
     border-radius: 20px;
     border: 1px solid #2bbd7e;
     background-color: #2bbd7e;
@@ -662,11 +662,11 @@ button {
     transition: transform 80ms ease-in;
 }
 
-button:active {
+.popup-content button:active {
     transform: scale(0.95);
 }
 
-button:focus {
+.popup-content button:focus {
     outline: none;
 }
 
@@ -893,3 +893,18 @@ footer{
     margin-right: 50px;
 }
 
+button{
+    border: 1px solid #2bbd7e;
+    background-color: #2bbd7e;
+    border-radius: 50px;
+}
+
+ul.slick-dots{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li.slack-dots{
+    margin-right: 20px;
+}
