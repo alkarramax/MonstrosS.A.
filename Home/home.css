@@ -40,7 +40,7 @@ body{
 
 nav.navFixed{
     background: #fff;
-    z-index: 2;
+    z-index: 99;
     box-shadow: 0 1px 7px rgba(0,0,0,0.6)
 }
 
@@ -359,6 +359,18 @@ nav.navFixed .logo img{
         width: 21rem !important;
     }
 
+}
+
+
+.card-wrapper2{
+    width: 95%;
+    margin: 0 2em 2em 2em;
+    overflow: hidden;
+}
+
+.card-wrapper2 .card{
+    display: inline-block;
+    text-align: center;
 }
 
 .card-wrapper{
@@ -893,18 +905,37 @@ footer{
     margin-right: 50px;
 }
 
-button{
-    border: 1px solid #2bbd7e;
-    background-color: #2bbd7e;
+.fa-angle-left:before{
+    font-size: 45px;
+    margin-left: 10px;
+}
+
+.fa-angle-right:before{
+    font-size: 45px;
+    margin-left: 10px;
+}
+
+.slick-track{
+    z-index: 1;
+}
+
+#left{
+    width: 50px;
     border-radius: 50px;
+    position: absolute;
+    margin-left: 30px;
+    z-index: 2;
+    background-color: aqua;
+    margin-top: 350px;
 }
 
-ul.slick-dots{
-    list-style: none;
-    display: flex;
-    justify-content: center;
+#right{
+    width: 50px;
+    border-radius: 50px;
+    margin-left: 1260px;
+    position: absolute;
+    z-index: 2;
+    background-color: aqua;
+    margin-top: 350px;
 }
 
-li.slack-dots{
-    margin-right: 20px;
-}

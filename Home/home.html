@@ -25,60 +25,86 @@
         })
         $(function() {
 
-$( "[data-product-info-link]" ).click(function(e) {
-    e.preventDefault();
-    var theLink = $(this);
-    var tabNum = $(this).data('product-info-link');
-    var tabItem = '[data-product-info-tab="' + tabNum +'"]';
-    var check = $(tabItem).is(':visible');
+        $( "[data-product-info-link]" ).click(function(e) {
+            e.preventDefault();
+            var theLink = $(this);
+            var tabNum = $(this).data('product-info-link');
+            var tabItem = '[data-product-info-tab="' + tabNum +'"]';
+            var check = $(tabItem).is(':visible');
 
-    if ( !check ) {
-        var other = $('[data-product-info-link]').not(this).removeClass('active');
-        var fadeOutDone = $('[data-product-info-tab]').css('display','none');
+            if ( !check ) {
+                var other = $('[data-product-info-link]').not(this).removeClass('active');
+                var fadeOutDone = $('[data-product-info-tab]').css('display','none');
 
-        $(tabItem).css('display','block');
-        $(theLink).addClass('active');
-    }
-});
+                $(tabItem).css('display','block');
+                $(theLink).addClass('active');
+            }
+        });
 
-});
-
-jQuery(document).ready(function($){
-    $(".ancora-scroll").click(function(event){
-        event.preventDefault();
-        $("html,body").animate({scrollTop:$(this.hash).offset().top},1000)
     });
-});
 
-$(document).ready(function(){
-    $('.card-wrapper').slick({
-    dots: true,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    nextArrow: $('.next'),
-    prevArrow: $('.prev'),
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 880,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-});
+        jQuery(document).ready(function($){
+            $(".ancora-scroll").click(function(event){
+                event.preventDefault();
+                $("html,body").animate({scrollTop:$(this.hash).offset().top},1000)
+            });
+        });
+
+        $(document).ready(function(){
+            $('.card-wrapper').slick({
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            nextArrow: $('.right'),    
+            prevArrow: $('.left'),
+            responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+        });
+        });
+
+        $(document).ready(function(){
+            $('.card-wrapper2').slick({
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            nextArrow: $('.right2'),    
+            prevArrow: $('.left2'),
+            responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                }
+            },
+            {
+                breakpoint: 880,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+        });
+    });
 
     </script>
 </head>
@@ -123,26 +149,26 @@ $(document).ready(function(){
     <section>
         <div id="causas" class="causa1">
             <h2>Invista no futuro de crianças e adolescentes</h2>
-                    <i class="fas fa-chevron-left prev"></i>
-                    <i class="fas fa-chevron-right next"></i>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <img src="imagens/back.jpg" alt="card background" class="card-img">
-                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                            <h1>Solidarity Player</h1>
-                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                            </p>
-                            <a href="../SobreDoacao/sobreDoacao.html" class="btn-doar">Contribua agora</a>
-                        </div>
-                        <div class="card">
-                            <img src="imagens/back.jpg" alt="card background" class="card-img">
-                            <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                            <h1>Solidarity Player</h1>
-                            <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
-                                que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
-                            </p>
-                            <a href="#" class="btn-doar">Contribua agora</a>
+            <div id="right" class="right"> <i class="fa fa-angle-right"></i></div>    
+            <div id="left" class="left"> <i class="fa fa-angle-left"></i></div>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="imagens/back.jpg" alt="card background" class="card-img">
+                        <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                        <h1>Solidarity Player</h1>
+                        <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                            que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                        </p>
+                        <a href="../SobreDoacao/sobreDoacao.html" class="btn-doar">Contribua agora</a>
+                    </div>
+                    <div class="card">
+                        <img src="imagens/back.jpg" alt="card background" class="card-img">
+                        <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
+                        <h1>Solidarity Player</h1>
+                        <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
+                            que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
+                        </p>
+                    <a href="#" class="btn-doar">Contribua agora</a>
                         </div>
                         <div class="card">
                             <img src="imagens/back.jpg" alt="card background" class="card-img">
@@ -174,9 +200,12 @@ $(document).ready(function(){
                     </div>
         </div>
     </section>
+    <section>
         <div class="causa">
         <h2 class="h2card">Apoie os idosos e preserve a nossa história</h2>
-                    <div class="card-wrapper">
+        <div id="right" class="right2"> <i class="fa fa-angle-right"></i></div>    
+        <div id="left" class="left2"> <i class="fa fa-angle-left"></i></div>
+                    <div class="card-wrapper2">
                         <div class="card">
                             <img src="imagens/back.jpg" alt="card background" class="card-img">
                             <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
@@ -366,5 +395,6 @@ $(document).ready(function(){
     </footer>
     <script src="home.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/27aa4e62af.js" crossorigin="anonymous"></script>
 </body>
 </html>
