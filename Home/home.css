@@ -233,6 +233,10 @@ nav.navFixed .logo img{
     .sobre .container-sobre-info-pacto-global {
         padding-top: 0;
     }
+
+    #right{
+        margin-left: 92% !important;
+    }
 }
 
 @media screen and (min-width: 816px) and (max-width: 1200px){
@@ -908,11 +912,13 @@ footer{
 .fa-angle-left:before{
     font-size: 45px;
     margin-left: 10px;
+    color: #2bbd7e;
 }
 
 .fa-angle-right:before{
     font-size: 45px;
     margin-left: 10px;
+    color: #2bbd7e;
 }
 
 .slick-track{
@@ -923,19 +929,19 @@ footer{
     width: 50px;
     border-radius: 50px;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 35px;
     z-index: 2;
-    background-color: aqua;
+    background-color: #eeeeee;
     margin-top: 350px;
 }
 
 #right{
     width: 50px;
     border-radius: 50px;
-    margin-left: 1260px;
+    margin-left: 94%;
     position: absolute;
     z-index: 2;
-    background-color: aqua;
+    background-color: #eeeeee;
     margin-top: 350px;
 }
 
