@@ -230,6 +230,10 @@ nav.navFixed{
     text-align: center;
 }
 
+.campaigns .height-session{
+    height: 900px;
+}
+
 .campaigns .children h2{
     font-size: 2.7rem;
     text-align: center;
@@ -242,7 +246,7 @@ nav.navFixed{
     text-align: center;
     color: #333;
     position: relative;
-    padding-top: 90px;
+    padding-top: 20px;
 }
 
 .campaigns .card p{
@@ -314,6 +318,7 @@ nav.navFixed{
     z-index: 2;
     background-color: #eeeeee;
     margin-top: 350px;
+    cursor: pointer;
 }
 
 #right{
@@ -324,6 +329,7 @@ nav.navFixed{
     z-index: 2;
     background-color: #eeeeee;
     margin-top: 350px;
+    cursor: pointer;
 }
 
 /*---------------------------------*/
@@ -834,6 +840,10 @@ button.ghost {
 
     .campaigns .children{
         padding-top: 50px;
+    }
+
+    .campaigns .seniors h2{
+        padding-top: 90px;
     }
 
     .tab-wrapper ul {
