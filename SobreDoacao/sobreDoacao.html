@@ -93,9 +93,20 @@
                 </div>
             </form>
             <div class="button-doar">
-                    <button type="button" class="btn btn-primary">Doar</button>
+                    <button type="button" class="btn btn-primary" id="popUpAparecer">Doar</button>
             </div>
         </div>
+        <div class="popup">
+                <div class="popup-content">
+                    <div class="container" id="container">
+                        <lottie-player
+                            src="https://assets5.lottiefiles.com/datafiles/K6S8jDtSdQ7EPjH/data.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay >
+                        </lottie-player>
+                        <p>Doação realizada com sucesso!</p>
+                        <button type="button" class="btn btn-primary" onclick="Nova()">Confirmar</button>
+                    </div>
+                </div>
+            </div>
         
         <script>
             function Nova()
@@ -103,5 +114,7 @@
             location.href="../Home/home.html"
         }
         </script>
+        <script src="sobreDoacao.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

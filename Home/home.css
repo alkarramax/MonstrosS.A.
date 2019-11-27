@@ -215,7 +215,7 @@ nav.navFixed{
     color: #0dae7a;
 }
 
-.header .text #link-leftside{
+.header .text #link-text{
     color:#018b87;
 }
 
@@ -961,8 +961,8 @@ button.ghost {
 
 @media screen and (min-width: 514px) and (max-width: 885px){ /*Comportamento dos componentes com a resolução da tela entre 514px a 885px*/
 
-    .card{
-        width: 21rem !important;
+    .campaigns .card{
+        width: 21rem;
     }
 
 }
