@@ -48,6 +48,17 @@ function init() {
     new TypeWriter(txtElement, words, wait);
 }
 
+/*
+
+var popUpApareceError = document.getElementById("popUpAparecerError");
+var modalBgError = document.querySelector(".popup-error");
+
+popUpApareceError.addEventListener("click", function() {
+    modalBgError.classList.add("popup-active-error");
+});
+
+*/
+
 var popUpAparece = document.getElementById("popUpAparecer");
 var modalBg = document.querySelector(".popup");
 var modalClose = document.querySelector(".close");

@@ -150,7 +150,7 @@ form{
     padding-top: 30px;
 }
 
-.button-doar button{
+.button-doar .btn{
     background-color: #01bcd5;
     border: #01bcd5;
     height: 50px;;
@@ -188,9 +188,5 @@ form{
     border-radius: 13px;
     font-size: 1rem;
 }
-
-.popup .container .btn:focus{
-    background-color: #0dae7a;
- }
 
 
