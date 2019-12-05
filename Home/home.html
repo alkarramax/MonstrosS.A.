@@ -24,25 +24,6 @@
             })
         })
 
-        $(function() {
-
-            $( '[data-product-info-link]' ).click(function(e) {
-                e.preventDefault();
-                var theLink = $(this);
-                var tabNum = $(this).data('product-info-link');
-                var tabItem = '[data-product-info-tab="' + tabNum +'"]';
-                var check = $(tabItem).is(':visible');
-
-                if ( !check ) {
-                    var other = $('[data-product-info-link]').not(this).removeClass('active');
-                    var fadeOutDone = $('[data-product-info-tab]').css('display','none');
-
-                    $(tabItem).css('display','block');
-                    $(theLink).addClass('active');
-                }
-            });
-        });
-
         jQuery(document).ready(function($){
             $('.ancora-scroll').click(function(event){
                 event.preventDefault();
@@ -112,20 +93,20 @@
             <div class="responsive">
                 <div class="logo">
                     <img src="imagens/Logo.png"/>
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                 </div>
                 <i id="bar" class="fa fa-bars" aria-hidden="true"></i>
             </div>
             <div class="normal">
                 <div class="logo">
                     <img src="imagens/Logo.png"/>
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a class="ancora-scroll" href="#causas">Causas</a></li>
-                        <li><a class="ancora-scroll" href="#sobre">Sobre</a></li>
-                        <li><a class="ancora-scroll" href="#como-funciona">Como funciona?</a></li>
+                        <li><a class="ancora-scroll" href="#campaigns">Causas</a></li>
+                        <li><a class="ancora-scroll" href="#about">Sobre</a></li>
+                        <li><a class="ancora-scroll" href="#how-it-works">Como funciona?</a></li>
                         <li><a class="nav-link" href="#" id="popUpAparecer">Entrar | Cadastrar</a>
                             <ul class="deslogar">
                                 <li><a href="#">Deslogar</a></li>
@@ -140,12 +121,12 @@
                  <span class="txt-type" data-wait="3000" data-words='["gera impacto.", "tem transparência.", "ajuda quem precisa."]'></span>
             </h1>
             <h3> Quem você quer ajudar hoje?</h3>
-            <h2> Faça a diferença na vida das pessoas, </br><a id="link-text" class="ancora-scroll" href="#campaigns">role</a> para baixo e descubra quem precisa</br> de você!</h2>
-            <h2> O solidarity player te conecta com causas</br> e pessoas.</h2> 
+            <h2> Faça a diferença na vida das pessoas, </br><a id="link-leftside" class="ancora-scroll" href="#causas">role</a> para baixo e descubra quem precisa</br> de você!</h2>
+            <h2> O solidarity player te conecta com causas</br> e pessoas.</h2>
           </div>
     </header>
     <section class="campaigns" id="campaigns">
-        <div class="children height-session">
+        <div class="children">
             <h2>Invista no futuro de crianças e adolescentes</h2>
             <div id="right" class="right">
                 <i class="fa fa-angle-right"></i>
@@ -157,7 +138,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -175,7 +156,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -184,7 +165,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -193,7 +174,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -201,7 +182,7 @@
                 </div>
             </div>
         </div>
-        <div class="seniors height-session">
+        <div class="seniors">
             <h2>Apoie os idosos e preserve a nossa história</h2>
             <div id="right" class="right2"> 
                 <i class="fa fa-angle-right"></i>
@@ -213,7 +194,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -222,7 +203,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -231,7 +212,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -240,7 +221,7 @@
                 <div class="card">
                     <img src="imagens/back.jpg" alt="card background" class="card-img">
                     <img src="imagens/logo-branco-300x287.png" alt="profile image" class="profile-img">
-                    <h1>Solidarity Player</h1>
+                    <h3>Solidarity Player</h3>
                     <p>A ABRALE – Associação Brasileira de Linfoma e Leucemia é uma das mais conceituadas e importantes associações 
                         que trabalha em todo o país para democratizar o tratamento e qualidade de vida de pessoas com doenças hematológicas.
                     </p>
@@ -250,40 +231,40 @@
         </div>
     </section>
     <div class="separator-card-and-about">
-        <h1>Como você quer o mundo?</h1>
-        <h2>A mudança começa a partir de você!</h2>
+        <h2>Como você quer o mundo?</h2>
+        <h3>A mudança começa a partir de você!</h3>
     </div>
-    <section class="about">
-        <h1> Como a Softplan e o grupo Solidário </br> ajudaram centenas de pessoas?</h1>
+    <section class="about" id="about">
+        <h2> Como a Softplan e o grupo Solidário </br> ajudaram milhares de pessoas?</h2>
         <div class="container-first">
             <div class="text-and-img">
                 <img src="imagens/campanha_do-_agasalho_03-768x768.jpg" alt="">
-                <h4>Grupo Solidario</h4>
+                <h3>Grupo Solidário</h3>
                 <p>O Grupo Solidário nasceu por iniciativa de colaboradores voluntários da Softplan, 
                     que se unem para promover ações de assistência social, organizando campanhas beneficentes. 
                     A Softplan é uma das parceiras, e apoia financeiramente as campanhas, enquanto os colaboradores
                     voluntários se reúnem e doam um pouco do seu tempo livre. </p>
             </div>
             <div class="topics">
-                <h2>Campanha do agasalho </br> solidário</h2>
+                <h3>Campanha do agasalho </br> solidário</h3>
                 <div class="info">
                     <div class="text">
-                        <h4>Comunidade Frei Damião</h4>
+                        <p>Comunidade Frei Damião</p>
                     </div>
                 </div>
                 <div class="info">
                         <div class="text">
-                            <h4>Comunidade Brejarú</h4>
+                            <p>Comunidade Brejarú</p>
                         </div>
                     </div>
                 <div class="info">
                     <div class="text">
-                        <h4>152 kits de higiene pessoal</h4>
+                        <p>152 kits de higiene pessoal</p>
                     </div>
                 </div>
                 <div class="info">
                     <div class="text">
-                        <h4>1223 peças</h4>
+                        <p>1223 peças</p>
                     </div>
                 </div>
             </div>
@@ -291,7 +272,7 @@
         <div class="container-last">
             <img src="imagens/img-pacto-onu.jpg" alt="">
             <div class="text">
-                <h2>Pacto Global da ONU</h2>
+                <h3>Pacto Global da ONU</h3>
                 <p>Desde 2017 a Softplan é signátaria do Pacto Global da ONU. O Pacto Global é uma iniciativa que 
                     visa mobilizar a comunidade empresarial internacional para a adoção, em suas práticas de negócios,
                     de valores fundamentais e internacionalmente aceitos nas áreas de direitos humanos, relações de
@@ -300,26 +281,27 @@
         </div>
     </section>
     <div class="separator-about-and-how-it-works">
-        <h1>Vá além do trabalho, mude a vida das pessoas.</h1>
+        <h2>Vá além do trabalho, mude a vida das pessoas.</h2>
     </div>
-    <section class="how-it-works">
-        <h1>Como funciona?</h1>
+    <section class="how-it-works" id="how-it-works">
+        <h2>Como funciona?</h2>
         <div class="container-first">
             <div class="text-and-img">
                 <img src="imagens/Design sem nome (6).png" alt="">
-                <p> Com o solidarity player ajudar uma causa fica ainda mais simples!
-                     1° Você se cadastra no site, escolhe uma campanha e doa!</p>
+                <p>Dapibus nam elit condimentum sollicitudin inceptos accumsan odio in mattis elit, 
+                    venenatis litora pulvinar sed sit fusce elit sagittis vestibulum.</p>
             </div>
             <div class="text-and-img">
                 <img src="imagens/Design sem nome (7).png" alt="">
-                <p> 2° Você leva a sua doação até o local solicitado. Isso tudo dentro da sua empresa!</p>
+                <p>Dapibus nam elit condimentum sollicitudin inceptos accumsan odio in mattis elit, 
+                    venenatis litora pulvinar sed sit fusce elit sagittis vestibulum.</p>
             </div>
         </div>
         <div class="container-last">
             <div class="text-and-img">
                 <img src="imagens/Design sem nome (8).png" alt="">
-                <p>3° O grupo solidário leva as doações </br> arrecadadas até as comunidades/entidades.</br> 
-                    Você faz o bem se ver a quem!</p>
+                <p>Dapibus nam elit condimentum sollicitudin </br> inceptos accumsan odio in mattis elit,
+                    venenatis </br> litora pulvinar sed sit fusce elit sagittis vestibulum.</p>
             </div>
         </div>
     </section>
